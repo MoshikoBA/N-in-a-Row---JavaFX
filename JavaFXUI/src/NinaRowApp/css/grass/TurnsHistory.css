@@ -1,0 +1,22 @@
+.splitPaneTitle {
+    -fx-font-family: Tahoma;
+    -fx-font-size: 26;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+}
+
+.turn {
+    -fx-font-family: Gadugi;
+    -fx-font-size: 17;
+    -fx-font-weight: bold;
+    -fx-text-fill: #007f10;
+}
+
+.turnHistoryTop {
+    -fx-background-color: #6aeb44;
+}
+
+.turnsHistoryBottom {
+    -fx-background-color: #e2ffcf;
+
+}

@@ -1,0 +1,34 @@
+.playerInfoKeyLabel {
+    -fx-font-size: 16px;
+    -fx-font-family: "Gadugi";
+    -fx-font-weight: bolder ;
+    -fx-text-fill: #aa0007;
+}
+
+.playerInfoValueLabel {
+    -fx-font-size: 16px;
+    -fx-font-family: "Gadugi";
+    -fx-font-weight: bold;
+    -fx-text-fill: #ff2916;
+}
+
+.playerInfoBoxTitle {
+    -fx-font-size: 16px;
+    -fx-font-family: "Gadugi";
+    -fx-font-weight: bold;
+    -fx-fill: #801612;
+
+}
+
+.playerInfoBoxTop {
+    -fx-background-color: #ffa730;
+}
+
+.playerInfoBoxBottom {
+    -fx-background-color: #fff8c1;
+
+}
+
+.retirePlayer {
+    -fx-opacity: 0.6;
+}

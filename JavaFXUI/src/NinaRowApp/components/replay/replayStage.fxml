@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="654.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="NinaRowApp.components.replay.ReplayStageController">
+   <children>
+      <AnchorPane prefHeight="600.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane prefHeight="654.0" prefWidth="800.0" styleClass="appImage" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+            <ScrollPane fx:id="m_BoardScrollPane" fitToHeight="true" fitToWidth="true" layoutX="196.0" prefHeight="351.0" prefWidth="424.0" AnchorPane.bottomAnchor="303.0" AnchorPane.leftAnchor="196.0" AnchorPane.rightAnchor="180.0" AnchorPane.topAnchor="0.0" />
+            <Button fx:id="m_NextButton" disable="true" layoutX="659.0" layoutY="176.0" mnemonicParsing="false" onAction="#nextButtonWasClicked" prefHeight="56.0" prefWidth="99.0" styleClass="appButton" text="Next" AnchorPane.rightAnchor="42.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="m_PrevButton" layoutX="57.0" layoutY="176.0" mnemonicParsing="false" onAction="#prevButtonWasClicked" prefHeight="56.0" prefWidth="99.0" styleClass="appButton" text="Prev" AnchorPane.leftAnchor="57.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <ScrollPane id="playersInfoBoxesScroll" fitToHeight="true" fitToWidth="true" layoutX="7.0" layoutY="428.0" prefHeight="301.0" prefWidth="791.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="2.0">
+               <content>
+                  <VBox spacing="10.0">
+                     <children>
+                        <HBox prefHeight="52.0" prefWidth="794.0">
+                           <children>
+                              <Label prefHeight="46.0" prefWidth="151.0" styleClass="appLabel" text="Current Turn:">
+                                 <font>
+                                    <Font name="System Bold" size="22.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="m_CurrentTurnLabel" prefHeight="46.0" prefWidth="484.0" styleClass="appLabel">
+                                 <font>
+                                    <Font size="22.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <FlowPane fx:id="m_PlayersInfo" hgap="10.0" prefHeight="245.0" prefWidth="794.0" vgap="10.0" />
+                     </children>
+                  </VBox>
+               </content>
+            </ScrollPane>
+         </children></AnchorPane>
+   </children>
+</AnchorPane>

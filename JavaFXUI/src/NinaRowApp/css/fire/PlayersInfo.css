@@ -1,0 +1,18 @@
+.playersInfoTitle {
+    -fx-font-size: 28px;
+    -fx-font-family: "Gadugi";
+    -fx-font-weight: bold;
+    -fx-fill: white;
+}
+
+.playersInfoTop {
+    -fx-background-color: #ff413e;
+}
+
+#playersInfoBoxesScroll {
+    -fx-background-color: transparent;
+}
+
+#playersInfoBoxesScroll .viewport {
+    -fx-background-color: transparent;
+}

@@ -1,0 +1,93 @@
+.appButton {
+    -fx-effect: innershadow( three-pass-box , lightgray , 15, 0.0 , 0 , 2 );
+    -fx-text-fill: yellow;
+    -fx-font-weight: bold;
+    -fx-background-color: #a30015;
+}
+
+.appButton:disabled {
+    -fx-opacity: 0.25;
+}
+
+.appButton:hover {
+    -fx-background-color: linear-gradient(#ffd31f, #ff2916);
+}
+
+#appTitle {
+    -fx-font-size: 90px;
+    -fx-font-family: "Gabriola";
+    -fx-font-weight: bold;
+    -fx-fill: #c00016;
+    -fx-effect: innershadow( three-pass-box , #ffd933, 5, 0.0 , 0 , 2 );
+}
+
+.board {
+    -fx-background-image: url("boardImage.png");
+}
+
+.appImage {
+    -fx-background-image: url("background.jpg");
+    -fx-opacity: 0.15
+}
+
+.boardCell {
+    -fx-border-color: #6f0401;
+    -fx-border-width: 2;
+    -fx-opacity: 0.7;
+}
+
+.boardActionCell {
+    -fx-background-color: linear-gradient(#620004, #d32518);
+    /*-fx-background-color: #b11304;*/
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 16;
+    /*-fx-border-width: 2;*/
+    -fx-opacity: 1.0;
+}
+
+.boardRowIndexCell {
+    -fx-background-color: linear-gradient(#620004, #d32518);
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 16;
+    -fx-opacity: 0.7;
+}
+
+.boardActionCell:hover {
+    -fx-cursor: hand;
+    -fx-background-color: linear-gradient(#ff441c, #fad951);
+}
+
+.appLabel {
+    -fx-text-fill: #aa0007;
+}
+
+#variantKeyLabel {
+    -fx-font-family: "Gadugi";
+    -fx-font-size: 24;
+    -fx-font-weight: bold;
+    -fx-text-fill: #b11304;
+}
+
+#variantValueLabel {
+    -fx-font-family: "Gadugi";
+    -fx-font-size: 20;
+    -fx-text-fill: #b11304;
+}
+
+.topScroll .viewport {
+    -fx-background-color: transparent;
+}
+
+.topScroll{
+    -fx-background-color:transparent;
+}
+
+.rightScroll {
+    -fx-background-color: transparent;
+}
+
+.rightScroll .viewport{
+    -fx-background-color: transparent;
+}

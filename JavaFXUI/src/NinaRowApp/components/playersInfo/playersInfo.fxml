@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<SplitPane id="mainPane" dividerPositions="0.135678391959799" orientation="VERTICAL" prefHeight="400.0" prefWidth="258.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="NinaRowApp.components.playersInfo.PlayersInfoController">
+  <items>
+    <AnchorPane maxHeight="60.0" maxWidth="258.0" minHeight="60.0" minWidth="229.0" prefHeight="60.0" prefWidth="245.0" styleClass="playersInfoTop">
+         <children>
+            <Text fx:id="TextPlayersDetails" layoutX="14.0" layoutY="43.7587890625" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="playersInfoTitle" text="Players Details" wrappingWidth="217.48681640625" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="10.0">
+               <font>
+                  <Font name="Bernard MT Condensed" size="35.0" />
+               </font>
+            </Text>
+         </children></AnchorPane>
+    <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="0.0" minWidth="0.0" prefHeight="1100.0" prefWidth="170.0">
+         <children>
+            <ScrollPane layoutX="2.0" prefHeight="326.0" prefWidth="256.0" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="-3.0" AnchorPane.rightAnchor="-2.0" AnchorPane.topAnchor="1.0">
+               <content>
+                  <VBox fx:id="m_PlayersInfoVBox" prefHeight="0.0" prefWidth="210.0" spacing="10.0" />
+               </content>
+            </ScrollPane>
+         </children>
+         <opaqueInsets>
+            <Insets bottom="2.0" />
+         </opaqueInsets>
+         <padding>
+            <Insets left="5.0" right="5.0" />
+         </padding></AnchorPane>
+  </items>
+   <padding>
+      <Insets bottom="2.0" right="2.0" top="2.0" />
+   </padding>
+</SplitPane>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<SplitPane fx:id="m_Box" dividerPositions="0.14351851851851852" orientation="VERTICAL" prefHeight="240.0" prefWidth="190.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="NinaRowApp.components.playerInfoBox.PlayerInfoBoxController">
+   <items>
+      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" styleClass="playerInfoBoxTop">
+         <children>
+            <Text fx:id="m_TextPlayer" layoutX="-1.0" layoutY="21.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="playerInfoBoxTitle" text="----- Player #1 -----" textAlignment="CENTER" wrappingWidth="190.0" AnchorPane.leftAnchor="-1.0" AnchorPane.rightAnchor="-1.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="151.0" prefWidth="230.0" styleClass="playerInfoBoxBottom">
+         <children>
+            <VBox layoutY="-3.0" prefHeight="115.0" prefWidth="110.0" spacing="3.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="5.0">
+               <children>
+                  <Label styleClass="playerInfoKeyLabel" text="Name: ">
+                     <padding>
+                        <Insets bottom="2.0" top="2.0" />
+                     </padding>
+                  </Label>
+                  <Label styleClass="playerInfoKeyLabel" text="ID: ">
+                     <padding>
+                        <Insets bottom="2.0" top="2.0" />
+                     </padding>
+                  </Label>
+                  <Label styleClass="playerInfoKeyLabel" text="Is human: ">
+                     <padding>
+                        <Insets bottom="2.0" top="2.0" />
+                     </padding>
+                  </Label>
+                  <Label styleClass="playerInfoKeyLabel" text="Disc color: ">
+                     <padding>
+                        <Insets bottom="2.0" top="2.0" />
+                     </padding>
+                  </Label>
+                  <Label styleClass="playerInfoKeyLabel" text="Turns played: ">
+                     <padding>
+                        <Insets bottom="2.0" top="2.0" />
+                     </padding>
+                  </Label>
+                  <Label styleClass="playerInfoKeyLabel" text="Is Active:">
+                     <padding>
+                        <Insets bottom="2.0" top="2.0" />
+                     </padding>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox layoutX="115.0" prefHeight="115.0" prefWidth="110.0" spacing="3.0" AnchorPane.bottomAnchor="5.0" AnchorPane.topAnchor="5.0">
+               <children>
+                  <Label fx:id="m_NameLabel" styleClass="playerInfoValueLabel" text="111">
+                     <padding>
+                        <Insets bottom="2.0" top="2.0" />
+                     </padding>
+                  </Label>
+                  <Label fx:id="m_IdLabel" styleClass="playerInfoValueLabel" text="111">
+                     <padding>
+                        <Insets bottom="2.0" top="2.0" />
+                     </padding>
+                  </Label>
+                  <Label fx:id="m_IsHumanLabel" styleClass="playerInfoValueLabel" text="111">
+                     <padding>
+                        <Insets bottom="2.0" top="2.0" />
+                     </padding>
+                  </Label>
+                  <Label fx:id="m_DiscColorLabel" styleClass="playerInfoValueLabel" text="111">
+                     <padding>
+                        <Insets bottom="2.0" top="2.0" />
+                     </padding>
+                  </Label>
+                  <Label fx:id="m_TurnsPlayedCounterLabel" styleClass="playerInfoValueLabel" text="111">
+                     <padding>
+                        <Insets bottom="2.0" top="2.0" />
+                     </padding>
+                  </Label>
+                  <Label fx:id="m_IsActiveLabel" styleClass="playerInfoValueLabel" text="111">
+                     <padding>
+                        <Insets bottom="2.0" top="2.0" />
+                     </padding>
+                  </Label>
+               </children>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </items>
+   <padding>
+      <Insets bottom="2.0" left="1.0" right="1.0" top="2.0" />
+   </padding>
+</SplitPane>
